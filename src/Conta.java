@@ -23,6 +23,7 @@ public abstract class Conta implements IConta {
 	@Override
 	public void depositar(double valor) {
 		saldo += valor;
+		System.out.println("Deposito realizado!");
 	}
 
 	@Override

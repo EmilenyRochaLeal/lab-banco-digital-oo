@@ -7,17 +7,13 @@ public class Main {
 		
 		Conta cc = new ContaCorrente(venilton, 1000);
 		Conta poupanca = new ContaPoupanca(venilton);
-		Cofrinho estudo = new Cofrinho(venilton, "estudo de poo", null, null);
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		poupanca.transferir(10, estudo);
-
+		// cc.transferir(1100, poupanca);
+		// cc.depositar(200);
+		// cc.sacar(350);
+		// cc.imprimirExtrato();
+		// poupanca.imprimirExtrato();
 		
-		cc.imprimirExtrato();
-		poupanca.renderJuros(0.1);
-		poupanca.imprimirExtrato();
-		estudo.imprimirExtrato();
 	}
 
 }

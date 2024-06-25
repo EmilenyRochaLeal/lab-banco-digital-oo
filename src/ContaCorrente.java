@@ -15,13 +15,21 @@ public class ContaCorrente extends Conta {
 	public double getChequeEspecial() {
 		return chequeEspecial;
 	}
+	public void setChequeEspecial(double chequeEspecial) {
+        this.chequeEspecial = chequeEspecial;
+    }
 	@Override
 	public void sacar(double valor) {
-		if (valor <= saldo + chequeEspecial) {
-            saldo -= valor;
-            System.out.println("Você está em cheque especial");
-        }else {
-			System.out.println("Sem saldo para essa operação");
+		if (valor > saldo) {
+            double resto = valor - saldo;
+			this.setChequeEspecial(getChequeEspecial() - resto);
+			saldo = resto * -1;
+		    System.out.println("Saque realizado. Você está em cheque especial");
+			getChequeEspecial();
+		}
+		else {
+			saldo -= valor;
+			System.out.println("Saque realizado !");
 		}
 	}
 }
