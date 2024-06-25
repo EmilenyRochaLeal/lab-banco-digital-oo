@@ -30,6 +30,7 @@ public abstract class Conta implements IConta {
 		this.sacar(valor);
 		contaDestino.depositar(valor);
 	}
+	
 
 	public int getAgencia() {
 		return agencia;
@@ -48,5 +49,10 @@ public abstract class Conta implements IConta {
 		System.out.println(String.format("Agencia: %d", this.agencia));
 		System.out.println(String.format("Numero: %d", this.numero));
 		System.out.println(String.format("Saldo: %.2f", this.saldo));
+	}
+
+	public void renderJuros(double d) {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'renderJuros'");
 	}
 }
