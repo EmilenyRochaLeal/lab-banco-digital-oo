@@ -10,6 +10,6 @@ Implementado o cheque especial
 
 Adicionado o rendimento de 0.1 a conta.
 
-# Cofrinho 
+# Transação
 
-Criação do cofrinho que permite o dinheiro render mais para um objetivo específico
+Método verExtrato que permite ver a data e o tipo de transação feita
